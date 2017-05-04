@@ -1,10 +1,10 @@
 'use strict';
 
-const {json} = require('micro');
+const {send} = require('micro');
+let match = require('fs-router')(__dirname + '/routes');
 
-module.exports = async req => {
-	const body = await json(req);
-
-	// let's echo the text
-	return {text: body.text};
-};
+module.exports = async function(req, res) {
+	let matched = match(req)
+	if (matched) return await matched(req, res)
+	send(res, 404, { error: 'Not found' })
+}
