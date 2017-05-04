@@ -1,0 +1,32 @@
+{
+  "name": "jarvis-server",
+  "version": "1.0.0",
+  "description": "Micro service to handle api.ai actions",
+  "author": "Lespagnol Rémy <remy.lespagnol@gmail.com>",
+  "repository": "Themandunord/jarvis-server",
+	"license": "MIT",
+  "scripts": {
+    "start": "micro",
+    "test": "xo && ava"
+  },
+  "engines": {
+    "node": ">= 6"
+  },
+  "files": [
+    "index.js",
+    "cli.js"
+  ],
+  "bin": "cli.js",
+  "main": "index.js",
+  "dependencies": {
+    "micro": "^7.0.0",
+    "update-notifier": "^1.0.3"
+  },
+  "devDependencies": {
+    "async-to-gen": "^1.3.2",
+    "ava": "^0.18.1",
+    "got": "^6.7.1",
+    "test-listen": "^1.0.1",
+    "xo": "^0.17.1"
+  }
+}
