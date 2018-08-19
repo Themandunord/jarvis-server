@@ -24,7 +24,7 @@ $ now Themandunord/jarvis-server
 
 Alternative, deploy right now without even leaving the browser:
 
-[![Deploy to now](https://deploy.now.sh/static/button.svg)](https://deploy.now.sh/?repo=https://github.com/Themandunord/jarvis-server)
+[![Deploy to now](https://deploy.now.sh/static/button.svg)](https://deploy.now.sh/?repo=https://github.com/Themandunord/jarvis-server) [![Greenkeeper badge](https://badges.greenkeeper.io/Themandunord/jarvis-server.svg)](https://greenkeeper.io/)
 
 
 ## License
